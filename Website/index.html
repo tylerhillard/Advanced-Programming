@@ -2,16 +2,20 @@
 <html lang="en">
     <head>
 
+
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
         <link rel="stylesheet" href="style.css"
         <title></title>
-        <div style="background-color:rgba(93, 158, 7, 0.466); max-height: 100%">
+        <div style="background-color:rgba(93, 158, 7, 0.164); max-height: 100%">
             <link rel="stylesheet" href="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css">
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+
+    
     </head>
     <style>
         
@@ -33,20 +37,48 @@
 
             <p100>This website is currently being used as a school project. A new version of my website will be coming soon, Thanks!</p100>
 
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#Education">Education</a></li>
-                    <li><a href="#Coursework">Coursework</a></li>
-                    <li><a href="#Topics of Interest">Topics of Interest</a></li>
-                  </ul>
-               </div> <!--navbar-->
 
-               <ul> 
-                <li><a href="#home">Home</a></li>
-                <li><a href="#Education">Education</a></li>
-                <li><a href="#Coursework">Coursework</a></li>
-            </ul> 
+
+
+            <div data-role="header" style="overflow:hidden;">
+                <h1>Tyler Hillard</h1>
+                    <a href="#" data-icon="gear" ></a>
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href=index.html>Home</a></li>
+                            <li><a href=education.html>Education</a></li>
+                            <li><a href=coursework.html>Coursework</a></li>
+                            <li><a href=toi.html>Topics of Interest</a></li>
+
+                        </ul>
+                    </div><!-- /navbar -->
+                </div><!-- /header -->
+                
+
+                
+
+                <input type="submit" value="Click Here for a suprise" onClick="myFunction()"/> 
+                <script>
+                  function myFunction() {
+                    window.location.href="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fview%2Fbrowns-vs-steelers-steelers-vs-browns-kick-antonio-brown-steelers-gif-18850552&psig=AOvVaw2ohcOQgxZvA2OhBjTpCi8Y&ust=1644177465201000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOC__7-s6fUCFQAAAAAdAAAAABAI";  
+                  }
+                </script>
+
+                    <button id="changeGreen">Change Font Color Red</button>
+                    <button id="changeRed">Change Font Color Blue</button>
+                    <p>
+                    <span id="output">I am a font color changer in testing</span>
+                    </p>
+                    <script>
+
+                    document.getElementById("changeGreen").onclick = function(){
+                        document.getElementById("output").style.color = 'red';
+                    }
+
+                    document.getElementById("changeRed").onclick = function(){
+                        document.getElementById("output").style.color = 'blue';
+                    }
+                    </script>
 
             <div style="margin: auto; text-align: center; max-width: 800px; background-color:white; height: 100%;">
                 <img src="profile-image.jpg" height="300px" width="300px" />

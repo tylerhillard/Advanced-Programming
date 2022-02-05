@@ -1,0 +1,31 @@
+<HTML>
+    <head>
+    <title>Animation</title>
+    <script src="jquery-3.1.1.min.js"></script>
+
+    <!---Animation Settings-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            function rgt() {
+                $('#sldr').animate({left:"15000"},10000,hider);
+        };
+        rgt();
+        function hider() {
+           $('sldr').css('left','0px');
+        }
+
+        });
+    </script>
+
+</head>
+
+    <body>
+        <p>We are trying something new</p>
+        <form id="formal" runat="server">
+            <div>
+                <img id="sldr" src="Shooting.gif" style="position: absolute;" />
+            </div>
+        </form>
+    </body>
+
+</HTML>
